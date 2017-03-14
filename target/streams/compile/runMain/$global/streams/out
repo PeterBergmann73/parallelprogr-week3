@@ -1,0 +1,16 @@
+[info] Running kmeans.fun.ScalaShop 
+[debug] Waiting for threads to exit or System.exit to be called.
+[debug] Waiting for thread run-main-1 to terminate.
+[debug]   Classpath:
+[debug] 	/home/slava/Downloads/Projects/Scala/Courses/ParallelProgramming/Week3/kmeans/target/scala-2.11/classes
+[debug] 	/home/slava/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+[debug] 	/home/slava/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.4.jar
+[debug] 	/home/slava/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.2.jar
+[debug] 	/home/slava/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar
+[debug] 	/home/slava/.ivy2/cache/com.storm-enroute/scalameter-core_2.11/jars/scalameter-core_2.11-0.6.jar
+[debug] 	/home/slava/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar
+[debug] 	/home/slava/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar
+[debug] 	/home/slava/.ivy2/cache/com.github.scala-blitz/scala-blitz_2.11/jars/scala-blitz_2.11-1.1.jar
+[debug] 	/home/slava/.ivy2/cache/org.scala-lang.modules/scala-swing_2.11/bundles/scala-swing_2.11-1.0.1.jar
+[debug] 	Thread run-main-1 exited.
+[debug] Waiting for thread AWT-Shutdown to terminate.
