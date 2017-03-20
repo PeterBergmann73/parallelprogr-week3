@@ -50,23 +50,13 @@ class KMeans {
     // we cannot remove duplicate means - we will change the order of the means
     // val unique = means.toSet.toSeq
 
-    // go through each point and find the closest mean
-    val mapped0: GenSeq[(Point, Point)] = points.map(p => p -> findClosest(p, means))
-
-    // now group
-    val mapped: GenMap[Point, GenSeq[Point]] = mapped0.groupBy(_._2).map {
-      case (k, seq) =>
-        val m: GenSeq[Point] = seq.map {
-          case (v1, v2) => v2
-        }
-
-        k -> m
-    }
+    // group by mean
+    val groupped: GenMap[Point, GenSeq[Point]] = points.groupBy(findClosest(_, means))
 
     // make sure that all the means are in the GenMap, even if their sequences are empty.
     val remapped: GenMap[Point, GenSeq[Point]] = means.map {
       m =>
-        val v: GenSeq[Point] = mapped.getOrElse(m, GenSeq[Point]())
+        val v: GenSeq[Point] = groupped.getOrElse(m, GenSeq[Point]())
         m -> v
     }.toMap
 
